@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funda Ukhanye - Enquiry</title>
+    <link rel="icon" type="image/png" href="https://iili.io/FD6Qnp4.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Inter', Arial, sans-serif; background: #f7f6f2; color: #222; margin: 0; padding: 0;">
+    <header class="bg-white shadow-md p-4 md:p-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div style="display: flex; align-items: flex-start; justify-content: flex-start; margin-bottom: 1em;">
+                <img src="https://iili.io/FD6Qnp4.png" alt="Funda Ukhanye Logo" style="height:48px;width:48px;border-radius:8px;margin-right:1em;">
+                <h1 style="font-size:2em;font-weight:700;color:#228B22;margin:0;">Funda Ukhanye</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4 md:space-x-6 text-lg font-medium">
+                    <li><a href="home.html" class="text-gray-700 hover:text-green-800 transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-green-800 transition duration-300">About</a></li>
+                    <li><a href="activities.html" class="text-gray-700 hover:text-green-800 transition duration-300">Activities</a></li>
+                    <li><a href="volunteer.html" class="text-gray-700 hover:text-green-800 transition duration-300">Volunteer</a></li>
+                    <li><a href="donate.html" class="text-gray-700 hover:text-green-800 transition duration-300">Donate</a></li>
+                    <li><a href="gallery.html" class="text-gray-600 hover:text-green-800 transition duration-300">Gallery</a></li>
+                    <li><a href="enquiry.html" class="text-green-700 hover:text-green-800 transition duration-300">Enquiry</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-green-800 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section style="position:relative; min-height:60vh; background: url('https://media.istockphoto.com/id/484794664/photo/teacher-reading-a-book-with-a-class-of-preschool-children.jpg?s=612x612&w=0&k=20&c=S7EbCoLHcbvLkPuT2K-dTLKpShDR7yijuuHp-vXLef0=') center/cover no-repeat;">
+        <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(46,92,58,0.65);"></div>
+        <div style="position:relative;z-index:2;max-width:900px;margin:0;padding:5em 2em;text-align:left;">
+            <img src="https://iili.io/FD6k9Pp.png" alt="Funda Ukhanye Logo" style="height:80px;width:80px;border-radius:12px;padding:6px;display:block;margin-bottom:1em;">
+            <h1 style="font-size:2.8em;font-weight:800;color:#fff;letter-spacing:2px;margin:0.5em 0 0.3em 0;">Get Involved with Funda Ukhanye</h1>
+            <h2 style="font-size:1.5em;color:#f9b233;font-weight:700;margin-bottom:1em;">Your support lights up young minds</h2>
+            <p style="font-size:1.3em;color:#fff;max-width:700px;margin:0 0 2em 0;">Please fill out the form below to volunteer, sponsor, or partner with us.</p>
+        </div>
+    </section>
+
+    <section style="background:#fff;padding:3em 0;">
+        <div style="max-width:700px;margin:0 auto;">
+            <h3 style="font-size:2em;font-weight:700;color:#2e5c3a;margin-bottom:1em;text-align:center;">Enquiry Form</h3>
+            <form action="#" method="POST" style="display:flex;flex-direction:column;gap:1.5em;">
+                <div>
+                    <label for="full_name" style="font-size:1.1em;color:#444;font-weight:600;">Full Name</label><br>
+                    <input type="text" id="full_name" name="full_name" required
+                        style="width:100%;padding:0.7em 1em;border:1px solid #ccc;border-radius:8px;font-size:1.1em;">
+                </div>
+                <div>
+                    <label for="email" style="font-size:1.1em;color:#444;font-weight:600;">Email Address</label><br>
+                    <input type="email" id="email" name="email" required
+                        style="width:100%;padding:0.7em 1em;border:1px solid #ccc;border-radius:8px;font-size:1.1em;">
+                </div>
+                <div>
+                    <label for="phone" style="font-size:1.1em;color:#444;font-weight:600;">Phone Number (Optional)</label><br>
+                    <input type="tel" id="phone" name="phone"
+                        style="width:100%;padding:0.7em 1em;border:1px solid #ccc;border-radius:8px;font-size:1.1em;">
+                </div>
+                <div>
+                    <label for="enquiry_type" style="font-size:1.1em;color:#444;font-weight:600;">I am interested in...</label><br>
+                    <select id="enquiry_type" name="enquiry_type" required
+                        style="width:100%;padding:0.7em 1em;border:1px solid #ccc;border-radius:8px;font-size:1.1em;background:#fff;">
+                        <option value="">Please Select</option>
+                        <option value="volunteer">Becoming a Volunteer</option>
+                        <option value="sponsor">Becoming a Sponsor</option>
+                        <option value="general">General Information</option>
+                        <option value="partnership">Partnership Opportunity</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message" style="font-size:1.1em;color:#444;font-weight:600;">Your Message</label><br>
+                    <textarea id="message" name="message" rows="5" required
+                        style="width:100%;padding:0.7em 1em;border:1px solid #ccc;border-radius:8px;font-size:1.1em;"></textarea>
+                </div>
+                <div style="text-align:center;">
+                    <button type="submit"
+                        style="background:#228B22;color:#fff;font-weight:700;padding:1em 2em;border-radius:8px;font-size:1.1em;box-shadow:0 2px 8px #c7e6c2;border:none;cursor:pointer;transition:background 0.2s;">
+                        Submit Enquiry
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer style="background:#2e5c3a;color:#fff;text-align:center;padding:2em 0;margin-top:0;font-size:1.1em;">
+        <div style="max-width:1200px;margin:0 auto;">
+            &copy; 2025 Funda Ukhanye. Lighting young minds one page at a time.<br>
+            <span style="font-size:0.95em;">Follow us on <a href="#" style="color:#f9b233;text-decoration:underline;">Facebook</a> | <a href="#" style="color:#f9b233;text-decoration:underline;">Twitter</a></span>
+        </div>
+    </footer>
+</body>
+</html>

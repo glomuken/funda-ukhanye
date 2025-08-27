@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funda Ukhanye – Donation Form</title>
+    <link rel="icon" type="image/png" href="https://iili.io/FD6Qnp4.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Inter', Arial, sans-serif; background: #f7f6f2; color: #222; margin: 0; padding: 0;">
+    <header class="bg-white shadow-md p-4 md:p-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div style="display: flex; align-items: flex-start; justify-content: flex-start; margin-bottom: 1em;">
+                <img src="https://iili.io/FD6Qnp4.png" alt="Funda Ukhanye Logo" style="height:48px;width:48px;border-radius:8px;margin-right:1em;">
+                <h1 style="font-size:2em;font-weight:700;color:#228B22;margin:0;">Funda Ukhanye</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4 md:space-x-6 text-lg font-medium">
+                    <li><a href="home.html" class="text-gray-700 hover:text-green-800 transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-green-800 transition duration-300">About</a></li>
+                    <li><a href="activities.html" class="text-gray-700 hover:text-green-800 transition duration-300">Activities</a></li>
+                    <li><a href="volunteer.html" class="text-gray-700 hover:text-green-800 transition duration-300">Volunteer</a></li>
+                    <li><a href="donate.html" class="text-green-700 hover:text-green-800 transition duration-300">Donate</a></li>
+                    <li><a href="gallery.html" class="text-gray-600 hover:text-green-800 transition duration-300">Gallery</a></li>
+                    <li><a href="enquiry.html" class="text-gray-700 hover:text-green-800 transition duration-300">Enquiry</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-green-800 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section style="background:#e9f5e1;padding:3em 0;">
+        <div style="max-width:700px;margin:0 auto;">
+            <h2 style="font-size:2em;font-weight:700;color:#2e5c3a;margin-bottom:1em;text-align:center;">Donation Form</h2>
+            <form action="#" method="POST" style="display:flex;flex-direction:column;gap:1.5em;">
+                <div>
+                    <label for="donor_name" style="font-size:1.1em;color:#444;font-weight:600;">Full Name</label><br>
+                    <input type="text" id="donor_name" name="donor_name" required style="width:100%;padding:0.7em 1em;border:1px solid #ccc;border-radius:8px;font-size:1.1em;">
+                </div>
+                <div>
+                    <label for="donor_email" style="font-size:1.1em;color:#444;font-weight:600;">Email Address</label><br>
+                    <input type="email" id="donor_email" name="donor_email" required style="width:100%;padding:0.7em 1em;border:1px solid #ccc;border-radius:8px;font-size:1.1em;">
+                </div>
+                <div>
+                    <label for="donation_type" style="font-size:1.1em;color:#444;font-weight:600;">What would you like to donate?</label><br>
+                    <select id="donation_type" name="donation_type" required style="width:100%;padding:0.7em 1em;border:1px solid #ccc;border-radius:8px;font-size:1.1em;background:#fff;">
+                        <option value="">Select Donation Type</option>
+                        <option value="books">Books</option>
+                        <option value="stationery">Stationery</option>
+                        <option value="funds">Funds</option>
+                        <option value="other">Other Resources</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message" style="font-size:1.1em;color:#444;font-weight:600;">Additional Details</label><br>
+                    <textarea id="message" name="message" rows="5" style="width:100%;padding:0.7em 1em;border:1px solid #ccc;border-radius:8px;font-size:1.1em;"></textarea>
+                </div>
+                <div style="text-align:center;">
+                    <button type="submit" style="background:#f9b233;color:#fff;font-weight:700;padding:1em 2em;border-radius:8px;font-size:1.1em;box-shadow:0 2px 8px #ffe7b2;border:none;cursor:pointer;transition:background 0.2s;">Send Donation Info</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer style="background:#2e5c3a;color:#fff;text-align:center;padding:2em 0;margin-top:0;font-size:1.1em;">
+        <div style="max-width:1200px;margin:0 auto;">
+            &copy; 2025 Funda Ukhanye. Lighting young minds one page at a time.<br>
+            <span style="font-size:0.95em;">Follow us on <a href="#" style="color:#f9b233;text-decoration:underline;">Facebook</a> | <a href="#" style="color:#f9b233;text-decoration:underline;">Twitter</a></span>
+        </div>
+    </footer>
+</body>
+</html>
